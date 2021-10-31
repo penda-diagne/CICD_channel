@@ -1,0 +1,14 @@
+node{
+
+    stage('Clone'){
+         git 'https://github.com/penda-diagne/CICD_channel'
+    }
+    
+    stage('Test unitaires'){
+         sh 'mvn test'
+    }
+    
+    stage('Package'){
+         sh 'mvn package'
+    }
+}
