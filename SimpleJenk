@@ -11,10 +11,14 @@ node{
     }
     
     stage('Test unitaires'){
-         sh 'mvn test'
+         withMaven(maven: 'mvn') {
+            sh "mvn test"
+        }'
     }
     
     stage('Package'){
-         sh 'mvn package'
+          withMaven(maven: 'mvn') {
+            sh "mvn package"
+        }
     }
 }
