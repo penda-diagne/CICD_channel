@@ -1,9 +1,7 @@
 node{
 
     stage ('Git Checkout') {
-      steps {
           git branch: 'main', url: 'https://github.com/penda-diagne/CICD_channel.git'
-         }
      }
     
     stage('Clone'){
