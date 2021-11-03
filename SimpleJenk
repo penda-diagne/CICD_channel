@@ -1,5 +1,4 @@
 node{
-
     stage('Clone'){
          git 'https://github.com/penda-diagne/CICD_channel'
     }
