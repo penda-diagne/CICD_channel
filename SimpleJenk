@@ -8,14 +8,10 @@ node{
     }
     
     stage('Test unitaires'){
-         withMaven(maven: 'mvn') {
             sh "mvn test"
-        }
     }
     
     stage('Package'){
-          withMaven(maven: 'mvn') {
             sh "mvn package"
-        }
     }
 }
