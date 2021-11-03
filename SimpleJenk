@@ -4,8 +4,8 @@ node{
           git branch: 'main', url: 'https://github.com/penda-diagne/CICD_channel.git'
      }
     
-    stage('Clone'){
-         git 'https://github.com/penda-diagne/CICD_channel'
+    stage('Git Clone'){
+         url: 'https://github.com/penda-diagne/CICD_channel'
     }
     
     stage('Test unitaires'){
