@@ -10,7 +10,7 @@ node{
          url: 'https://github.com/penda-diagne/CICD_channel'
     }
     
-    stage('sh Test unitaires'){
+    stage('Test unitaires'){
          sh 'mvn test'
     }
     
